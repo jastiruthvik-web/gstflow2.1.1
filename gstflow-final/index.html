@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GSTflow — AI-Powered GST Intelligence for CAs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-bolt">⚡</span>
+        <span>GSTflow</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="problem.html">The Problem</a></li>
+        <li><a href="solution.html">Solution</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="why-now.html">Why Now</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <a href="waitlist.html" class="btn btn--nav">Join Waitlist →</a>
+      <button class="nav__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="problem.html">The Problem</a>
+      <a href="solution.html">Solution</a>
+      <a href="product.html">Product</a>
+      <a href="why-now.html">Why Now</a>
+      <a href="about.html">About</a>
+      <a href="waitlist.html" class="btn btn--primary">Join Waitlist →</a>
+    </div>
+  </nav>
+
+  <!-- HERO with background image, vertical layout -->
+  <section class="hero">
+    <div class="hero__bg-image"></div>
+
+    <div class="hero__inner container">
+      <div class="hero__left">
+        <div class="hero__badge reveal">
+          <span class="badge__dot"></span>
+          Early Access · 2026 · Hyderabad
+        </div>
+
+        <h1 class="hero__headline reveal reveal--delay-1">
+          GST filing season<br />
+          <em>is about to change</em><br />
+          <span class="hero__headline--accent">forever.</span>
+        </h1>
+
+        <p class="hero__sub reveal reveal--delay-2">
+          Something powerful is being built for Chartered Accountants across India.<br />
+          The invoice chaos stops here.
+        </p>
+
+        <div class="hero__cta-group reveal reveal--delay-3">
+          <a href="waitlist.html" class="btn btn--primary btn--large">
+            Get Early Access
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="solution.html" class="btn btn--ghost btn--large">See How It Works</a>
+        </div>
+
+        <div class="hero__stats reveal reveal--delay-4">
+          <div class="hero__stat">
+            <span class="stat__number" id="heroCount">128</span>
+            <span class="stat__label">CAs Pre-Registered</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <span class="stat__number">15–20</span>
+            <span class="stat__label">Hours Saved / Month</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <span class="stat__number">9</span>
+            <span class="stat__label">GST Fields Extracted by AI</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Invoice card: vertical, on the right -->
+      <div class="hero__right reveal reveal--delay-3">
+        <div class="mockup-card">
+          <div class="mockup-card__header">
+            <div class="mockup-card__dots"><span></span><span></span><span></span></div>
+            <span class="mockup-card__title">Invoice · AI Extract</span>
+            <span class="mockup-card__badge">Live</span>
+          </div>
+          <div class="mockup-card__body">
+            <div class="mockup-row"><span class="mockup-label">GSTIN</span><span class="mockup-value confidence--high">29AABCC1234F1Z5</span><span class="mockup-conf">99%</span></div>
+            <div class="mockup-row"><span class="mockup-label">Invoice No.</span><span class="mockup-value confidence--high">INV-2026-0128</span><span class="mockup-conf">98%</span></div>
+            <div class="mockup-row"><span class="mockup-label">Date</span><span class="mockup-value confidence--high">14 Mar 2026</span><span class="mockup-conf">100%</span></div>
+            <div class="mockup-row"><span class="mockup-label">Taxable Amt</span><span class="mockup-value confidence--high">₹84,500.00</span><span class="mockup-conf">100%</span></div>
+            <div class="mockup-row"><span class="mockup-label">CGST</span><span class="mockup-value confidence--high">₹7,605.00</span><span class="mockup-conf">99%</span></div>
+            <div class="mockup-row"><span class="mockup-label">SGST</span><span class="mockup-value confidence--high">₹7,605.00</span><span class="mockup-conf">99%</span></div>
+            <div class="mockup-row mockup-row--flagged"><span class="mockup-label">Supplier Name</span><span class="mockup-value confidence--low">Sreeni Traders Pvt</span><span class="mockup-conf mockup-conf--warn">71%</span></div>
+            <div class="mockup-row"><span class="mockup-label">HSN Code</span><span class="mockup-value confidence--high">8471</span><span class="mockup-conf">97%</span></div>
+            <div class="mockup-row"><span class="mockup-label">Total Amount</span><span class="mockup-value confidence--high">₹99,710.00</span><span class="mockup-conf">100%</span></div>
+          </div>
+          <div class="mockup-card__footer">
+            <button class="mockup-btn mockup-btn--approve">✓ Approve All</button>
+            <button class="mockup-btn mockup-btn--export">Export to Tally</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- PAIN TEASER -->
+  <section class="pain-teaser">
+    <div class="container">
+      <div class="pain-teaser__label reveal">The Reality</div>
+      <h2 class="pain-teaser__headline reveal reveal--delay-1">
+        Every CA in India is losing<br /><span class="text--accent">20 hours a month</span><br />to a problem that has a fix.
+      </h2>
+      <div class="pain-teaser__cards">
+        <div class="pain-card reveal reveal--delay-1">
+          <div class="pain-card__icon">📱</div>
+          <h3>WhatsApp at Midnight</h3>
+          <p>Clients send crumpled invoice photos at 11 PM. No structure. No format. Just chaos you have to decode by morning.</p>
+        </div>
+        <div class="pain-card reveal reveal--delay-2">
+          <div class="pain-card__icon">⌨️</div>
+          <h3>Manual Data Entry</h3>
+          <p>200 invoices = 2 full working days. Typed. By hand. Into Tally. Repeated every single month. Permanently.</p>
+        </div>
+        <div class="pain-card reveal reveal--delay-3">
+          <div class="pain-card__icon">⚠️</div>
+          <h3>Errors & Penalties</h3>
+          <p>One wrong GSTIN. One missed invoice. One penalty notice. One mistake costs more than an entire year of software.</p>
+        </div>
+      </div>
+      <div class="pain-teaser__cta reveal">
+        <a href="problem.html" class="btn btn--outline">Read the Full Problem →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTION TEASER -->
+  <section class="solution-teaser">
+    <div class="container">
+      <div class="solution-teaser__inner">
+        <div class="solution-teaser__text reveal">
+          <div class="section-label">The Fix</div>
+          <h2>WhatsApp chaos<br />to clean Tally data<br /><em>in seconds.</em></h2>
+          <p>GSTflow uses advanced AI to read any invoice format — PDF, photo, Excel — and extract all 9 GST fields automatically, with per-field confidence scores. Your clients upload. AI does the reading. You review and export.</p>
+          <div class="flow-steps">
+            <div class="flow-step"><span class="flow-step__num">01</span><div><strong>Client Uploads</strong><p>Unique link. Phone-friendly. No login needed.</p></div></div>
+            <div class="flow-step"><span class="flow-step__num">02</span><div><strong>AI Extracts</strong><p>Our AI reads every field. Flags low-confidence ones in red.</p></div></div>
+            <div class="flow-step"><span class="flow-step__num">03</span><div><strong>You Approve</strong><p>Clean dashboard. One-click corrections. Nothing slips through.</p></div></div>
+            <div class="flow-step"><span class="flow-step__num">04</span><div><strong>Export to Tally</strong><p>XML or Excel. Imports in one click. File on time. Every time.</p></div></div>
+          </div>
+          <a href="solution.html" class="btn btn--primary">See the Full Solution →</a>
+        </div>
+        <div class="solution-teaser__visual reveal reveal--delay-2">
+          <div class="flow-visual">
+            <div class="flow-node flow-node--upload"><div class="flow-node__icon">📤</div><span>Client Upload</span></div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node flow-node--ai"><div class="flow-node__icon">🤖</div><span>AI Extract</span></div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node flow-node--review"><div class="flow-node__icon">📊</div><span>CA Reviews</span></div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node flow-node--export"><div class="flow-node__icon">✅</div><span>Tally Export</span></div>
+          </div>
+          <div class="dashboard-preview">
+            <div class="dashboard-preview__header"><span>Multi-Client Dashboard</span><span class="dash-live">● Live</span></div>
+            <div class="dashboard-preview__row"><span>Sharma Enterprises</span><span class="dash-tag dash-tag--done">Filed ✓</span></div>
+            <div class="dashboard-preview__row"><span>Mehta & Sons</span><span class="dash-tag dash-tag--pending">3 pending</span></div>
+            <div class="dashboard-preview__row"><span>Reddy Traders</span><span class="dash-tag dash-tag--review">Review needed</span></div>
+            <div class="dashboard-preview__row"><span>Krishnan Pvt Ltd</span><span class="dash-tag dash-tag--done">Filed ✓</span></div>
+            <div class="dashboard-preview__row"><span>Gupta Industries</span><span class="dash-tag dash-tag--upload">Awaiting upload</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT YOU GET (replacing roadmap) -->
+  <section class="benefits-section">
+    <div class="container">
+      <div class="section-label reveal">What You Get</div>
+      <h2 class="reveal reveal--delay-1">Join early. Get more.</h2>
+      <p class="reveal reveal--delay-2" style="max-width:560px;">Pre-registering isn't just getting on a list — it comes with real, lasting benefits for the CAs who move first.</p>
+      <div class="benefits-grid">
+        <div class="benefit-card reveal reveal--delay-1">
+          <div class="benefit-card__icon">🔓</div>
+          <h3>Access Before Everyone Else</h3>
+          <p>Be among the first CAs to use GSTflow before it opens to the public. Test it on real workflows. Shape what gets built next.</p>
+        </div>
+        <div class="benefit-card reveal reveal--delay-2">
+          <div class="benefit-card__icon">💰</div>
+          <h3>Founding Pricing — Locked Forever</h3>
+          <p>Early registrations get 20% off permanently. No matter how pricing grows, your rate never changes as long as you're a customer.</p>
+        </div>
+        <div class="benefit-card reveal reveal--delay-3">
+          <div class="benefit-card__icon">🎯</div>
+          <h3>Direct Line to the Team</h3>
+          <p>Your feedback goes straight to the people building GSTflow. Feature requests, bugs, workflow ideas — we read every message.</p>
+        </div>
+        <div class="benefit-card reveal reveal--delay-1">
+          <div class="benefit-card__icon">📞</div>
+          <h3>White-Glove Onboarding</h3>
+          <p>Not a help article. An actual call. We walk you through setting up your first client workflow together, from scratch.</p>
+        </div>
+        <div class="benefit-card reveal reveal--delay-2">
+          <div class="benefit-card__icon">⚡</div>
+          <h3>Zero WhatsApp Invoices</h3>
+          <p>Your clients get a personal upload link. No more invoice photos in personal chats. No more midnight messages. Ever.</p>
+        </div>
+        <div class="benefit-card reveal reveal--delay-3">
+          <div class="benefit-card__icon">🛡️</div>
+          <h3>File with Full Confidence</h3>
+          <p>Every field flagged. Every GSTIN validated. Every low-confidence extraction highlighted. You review, approve, file — zero surprises.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARKET NUMBERS -->
+  <section class="market-section">
+    <div class="container">
+      <div class="section-label reveal">Market Opportunity</div>
+      <h2 class="reveal reveal--delay-1">A massive, underserved<br />professional market.</h2>
+      <div class="market-grid">
+        <div class="market-stat reveal reveal--delay-1"><span class="market-stat__num">1.6L</span><span class="market-stat__label">Practicing CAs in India</span></div>
+        <div class="market-stat reveal reveal--delay-2"><span class="market-stat__num">1.53Cr</span><span class="market-stat__label">Active GST Taxpayers</span></div>
+        <div class="market-stat reveal reveal--delay-3"><span class="market-stat__num">₹466M</span><span class="market-stat__label">Tax Software Market (2023)</span></div>
+        <div class="market-stat reveal reveal--delay-4"><span class="market-stat__num">10.9%</span><span class="market-stat__label">Market CAGR to 2030</span></div>
+      </div>
+      <p class="market-note reveal">GSTflow targets the <strong>72,696 solo CA firms</strong> — the most underserved segment. The most ignored. The most ready for a solution built just for them.</p>
+    </div>
+  </section>
+
+  <!-- URGENCY -->
+  <section class="urgency-section">
+    <div class="container">
+      <div class="urgency-inner reveal">
+        <div class="urgency-tag">⚡ Why Right Now</div>
+        <h2>GSTR-3B returns are now<br /><span class="text--danger">hard-locked after filing.</span></h2>
+        <p>CAs can no longer edit pre-filled returns after filing. Accuracy before filing is now mandatory — not optional. The window to build this habit is <strong>right now.</strong></p>
+        <a href="why-now.html" class="btn btn--primary">Understand the Urgency →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAITLIST CTA -->
+  <section class="waitlist-cta">
+    <div class="container">
+      <div class="waitlist-cta__inner reveal">
+        <h2>Be among the first CAs<br />to leave the chaos behind.</h2>
+        <p>Early access. Founding pricing. Your feedback shapes the product.</p>
+        <div class="waitlist-cta__buttons">
+          <a href="waitlist.html" class="btn btn--primary btn--xl">
+            Pre-Register Now
+            <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="product.html" class="btn btn--ghost btn--xl">Explore the Product</a>
+        </div>
+        <p class="waitlist-cta__note">No spam. No commitment. Just early access.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">⚡ GSTflow</div>
+          <p>The AI-powered GST compliance layer<br />for every CA in India.</p>
+          <p class="footer__contact">
+            <a href="mailto:gstfloww@gmail.com">gstfloww@gmail.com</a> ·
+            <a href="https://instagram.com/gstfloww" target="_blank">@gstfloww</a>
+          </p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <h4>Product</h4>
+            <a href="solution.html">How It Works</a>
+            <a href="product.html">Features</a>
+            <a href="why-now.html">Why Now</a>
+          </div>
+          <div class="footer__col">
+            <h4>Company</h4>
+            <a href="about.html">About</a>
+            <a href="problem.html">The Problem</a>
+            <a href="waitlist.html">Join Waitlist</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 GSTflow. Built in Hyderabad, India.</span>
+        <span><a href="mailto:gstfloww@gmail.com" style="color:inherit;">gstfloww@gmail.com</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/global.js"></script>
+  <script src="js/index.js"></script>
+  <script>
+    // Dynamic pre-registration count: starts at 128, grows with every signup
+    function getHeroCount() {
+      const extra = parseInt(localStorage.getItem('gstflow_count') || '0');
+      return 128 + extra;
+    }
+    const el = document.getElementById('heroCount');
+    if (el) el.textContent = getHeroCount();
+  </script>
+</body>
+</html>

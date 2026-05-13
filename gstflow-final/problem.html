@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Problem — GSTflow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/problem.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo"><span class="nav__logo-bolt">⚡</span><span>GSTflow</span></a>
+      <ul class="nav__links">
+        <li><a href="problem.html">The Problem</a></li>
+        <li><a href="solution.html">Solution</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="why-now.html">Why Now</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <a href="waitlist.html" class="btn btn--nav">Join Waitlist →</a>
+      <button class="nav__burger" id="burger"><span></span><span></span><span></span></button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="problem.html">The Problem</a>
+      <a href="solution.html">Solution</a>
+      <a href="product.html">Product</a>
+      <a href="why-now.html">Why Now</a>
+      <a href="about.html">About</a>
+      <a href="waitlist.html" class="btn btn--primary">Join Waitlist →</a>
+    </div>
+  </nav>
+
+  <section class="prob-hero">
+    <div class="container">
+      <span class="section-label" style="color:var(--danger)">The Reality</span>
+      <h1>Every CA in India is fighting<br />a war they didn't sign up for.</h1>
+      <p>The invisible tax on Chartered Accountants. Hours. Stress. Liability. Every month. Forever. Until now.</p>
+    </div>
+  </section>
+
+  <section class="time-loss">
+    <div class="container">
+      <div class="tl-inner">
+        <div class="tl-text">
+          <span class="section-label" style="color:var(--danger)">The Hidden Cost</span>
+          <h2>15&ndash;20 hours.<br />Every month.<br />Gone.</h2>
+          <p>That's not an estimate. That's the average time a solo CA in India spends on tasks that have nothing to do with their expertise — just chasing, typing, and fixing invoice data before they can even begin the actual GST filing work.</p>
+          <p>At &#8377;500/hour — a conservative billing rate — that's <strong>&#8377;10,000 of billable time</strong> vaporized every single month. Per CA. Silently.</p>
+        </div>
+        <div class="tl-donut">
+          <div class="donut-ring">
+            <svg viewBox="0 0 120 120" style="width:100%;height:100%;transform:rotate(-90deg)">
+              <circle cx="60" cy="60" r="45" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="18"/>
+              <circle cx="60" cy="60" r="45" fill="none" stroke="#ef4444" stroke-width="18" stroke-dasharray="141.4 282.7" stroke-dashoffset="70.7" stroke-linecap="round"/>
+              <circle cx="60" cy="60" r="45" fill="none" stroke="#3b82f6" stroke-width="18" stroke-dasharray="70.7 282.7" stroke-dashoffset="-70.7" stroke-linecap="round"/>
+            </svg>
+            <div class="donut-center">
+              <span class="donut-pct">50%</span>
+              <span class="donut-of">of work time</span>
+              <span class="donut-sub">wasted on data</span>
+            </div>
+          </div>
+          <div class="donut-legend">
+            <div class="leg-item"><span style="background:#ef4444"></span>Invoice chaos &amp; data entry</div>
+            <div class="leg-item"><span style="background:#3b82f6"></span>Actual CA expertise</div>
+            <div class="leg-item"><span style="background:rgba(255,255,255,0.1)"></span>Admin &amp; other</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="problems-section">
+    <div class="container">
+      <span class="section-label">Three Broken Workflows</span>
+      <h2>Where the hours go.</h2>
+
+      <div class="pcard">
+        <div class="pcard__num">01</div>
+        <div class="pcard__body">
+          <div class="pcard__icon">📱</div>
+          <div class="pcard__text">
+            <h3>WhatsApp at Midnight</h3>
+            <p>The scene: It's 11:43 PM. A client sends you a blurry photo of a crumpled invoice taken under their car dashboard light. "Bhai please add this." Tomorrow is the filing deadline.</p>
+            <p>This happens dozens of times per month. Every client. Different formats, different quality, different levels of urgency. There's no structure, no portal, no system. Just your WhatsApp, exploding.</p>
+            <div class="pcard__tags">
+              <span>~4 hrs/month per client chasing uploads</span>
+              <span>Zero audit trail</span>
+              <span>100% manual sorting</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pcard__num">02</div>
+        <div class="pcard__body">
+          <div class="pcard__icon">⌨️</div>
+          <div class="pcard__text">
+            <h3>Manual Data Entry into Tally</h3>
+            <p>Once you have the invoice — if you can read it — every single field needs to be typed by hand into Tally. GSTIN. Invoice number. Date. Taxable amount. CGST. SGST. HSN code. Supplier name. Total.</p>
+            <p>That's 9 fields. Per invoice. For a client with 50 invoices per month, that's <strong>450 manual keystrokes of data</strong> — every month, without fail, with zero margin for error.</p>
+            <div class="pcard__tags">
+              <span>200 invoices = 2 full working days</span>
+              <span>Repetitive. Permanent. Scaleless.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pcard__num">03</div>
+        <div class="pcard__body">
+          <div class="pcard__icon">⚠️</div>
+          <div class="pcard__text">
+            <h3>Errors &amp; GST Penalties</h3>
+            <p>One wrong digit in a GSTIN. One invoice missed because it came in a 200-message WhatsApp thread. One transposition error in a taxable amount. These aren't hypothetical — they happen constantly.</p>
+            <p>And the cost? A GST penalty notice. Client trust, gone. Hours spent rectifying. Sometimes &#8377;10,000–&#8377;50,000 in penalties. For a typo. On an invoice you typed by hand at 10 PM.</p>
+            <div class="pcard__tags">
+              <span>1 mistake = more than a year of software cost</span>
+              <span>No confidence scores = no safety net</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="who-section">
+    <div class="container">
+      <span class="section-label">The Most Affected</span>
+      <h2>72,696 solo CA firms.<br />No one built anything for them.</h2>
+      <p class="who-intro">Large firms have assistants. They have teams. They have custom software. Solo CAs — the backbone of compliance for India's MSMEs — have WhatsApp, Tally, and hope.</p>
+      <div class="who-grid">
+        <div class="who-card">
+          <div class="who-num">1.6L</div>
+          <div class="who-label">Practicing CAs in India</div>
+          <div class="who-sub">and the number is growing</div>
+        </div>
+        <div class="who-card">
+          <div class="who-num">72,696</div>
+          <div class="who-label">Solo CA firms</div>
+          <div class="who-sub">the most underserved segment</div>
+        </div>
+        <div class="who-card">
+          <div class="who-num">50+</div>
+          <div class="who-label">Clients per solo CA</div>
+          <div class="who-sub">each sending invoices monthly</div>
+        </div>
+        <div class="who-card">
+          <div class="who-num">&#8377;0</div>
+          <div class="who-label">VC-backed solutions for them</div>
+          <div class="who-sub">until now</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="prob-cta">
+    <div class="container">
+      <div class="prob-cta__inner">
+        <span class="section-label">There's a better way.</span>
+        <h2>The problem is real.<br />The fix is here.</h2>
+        <p>GSTflow eliminates the chaos — invoice intake, AI extraction, one-click export to Tally.</p>
+        <div class="prob-cta__btns">
+          <a href="solution.html" class="btn btn--primary btn--large">See the Solution →</a>
+          <a href="waitlist.html" class="btn btn--ghost btn--large">Join the Waitlist</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">⚡ GSTflow</div>
+          <p>The AI-powered GST compliance layer<br />for every CA in India.</p>
+          <p class="footer__contact">
+            <a href="mailto:gstfloww@gmail.com">gstfloww@gmail.com</a> ·
+            <a href="https://instagram.com/gstfloww" target="_blank">@gstfloww</a>
+          </p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <h4>Product</h4>
+            <a href="solution.html">How It Works</a>
+            <a href="product.html">Features</a>
+            <a href="why-now.html">Why Now</a>
+          </div>
+          <div class="footer__col">
+            <h4>Company</h4>
+            <a href="about.html">About</a>
+            <a href="problem.html">The Problem</a>
+            <a href="waitlist.html">Join Waitlist</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 GSTflow. Built in Hyderabad, India.</span>
+        <span>Seed Round &middot; Actively Raising</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/global.js"></script>
+  <script src="js/problem.js"></script>
+</body>
+</html>

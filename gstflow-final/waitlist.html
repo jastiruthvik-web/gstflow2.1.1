@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pre-Register — GSTflow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/waitlist.css" />
+    <!-- EmailJS for confirmation emails -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  </head>
+  <body>
+    <nav class="nav" id="nav">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo"
+          ><span class="nav__logo-bolt">⚡</span><span>GSTflow</span></a
+        >
+        <ul class="nav__links">
+          <li><a href="problem.html">The Problem</a></li>
+          <li><a href="solution.html">Solution</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="why-now.html">Why Now</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <a href="waitlist.html" class="btn btn--nav">Join Waitlist →</a>
+        <button class="nav__burger" id="burger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="nav__mobile" id="mobileMenu">
+        <a href="problem.html">The Problem</a>
+        <a href="solution.html">Solution</a>
+        <a href="product.html">Product</a>
+        <a href="why-now.html">Why Now</a>
+        <a href="about.html">About</a>
+        <a href="waitlist.html" class="btn btn--primary">Join Waitlist →</a>
+      </div>
+    </nav>
+
+    <section class="waitlist-page">
+      <div class="waitlist-page__bg">
+        <div class="waitlist-bg__grid"></div>
+        <div class="waitlist-bg__orb waitlist-bg__orb--1"></div>
+        <div class="waitlist-bg__orb waitlist-bg__orb--2"></div>
+      </div>
+
+      <div class="container">
+        <div class="waitlist-page__inner">
+          <!-- LEFT: Pitch -->
+          <div class="waitlist-left reveal">
+            <div class="waitlist-badge">
+              <span class="badge__dot"></span>
+              <span class="waitlist-count-display">128</span>&nbsp;CAs already
+              pre-registered
+            </div>
+            <h1>Leave the<br />chaos behind.</h1>
+            <p>
+              GSTflow is in early access. We're onboarding a small group of
+              Chartered Accountants who want to eliminate invoice chaos and file
+              GST with confidence — months before we open to the public.
+            </p>
+
+            <div class="waitlist-perks">
+              <div class="perk-item">
+                <div class="perk-icon">🔓</div>
+                <div>
+                  <strong>Early access before public launch</strong>
+                  <p>
+                    Be among the first CAs to experience GSTflow before it opens
+                    to everyone.
+                  </p>
+                </div>
+              </div>
+              <div class="perk-item">
+                <div class="perk-icon">🎁</div>
+                <div>
+                  <strong>20% off — for the first few signups only</strong>
+                  <p>
+                    Founding member pricing locked in forever. The discount
+                    disappears once early spots fill up.
+                  </p>
+                </div>
+              </div>
+              <div class="perk-item">
+                <div class="perk-icon">🎯</div>
+                <div>
+                  <strong>Your feedback shapes the product</strong>
+                  <p>
+                    Direct access to the team. Your workflow becomes our
+                    roadmap.
+                  </p>
+                </div>
+              </div>
+              <div class="perk-item">
+                <div class="perk-icon">📩</div>
+                <div>
+                  <strong>We'll notify you at launch</strong>
+                  <p>
+                    You'll get a personal email the moment GSTflow is ready for
+                    you.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="waitlist-social">
+              <div class="waitlist-avatars">
+                <div class="avatar-bubble" style="background: #1e3a6e">CA</div>
+                <div class="avatar-bubble" style="background: #1a4a5e">PK</div>
+                <div class="avatar-bubble" style="background: #2d3a6e">SM</div>
+                <div class="avatar-bubble" style="background: #1e5047">RV</div>
+                <div class="avatar-bubble" style="background: #3a2d6e">
+                  +<span class="waitlist-count-display">128</span>
+                </div>
+              </div>
+              <p>
+                Join <span class="waitlist-count-display">128</span> CAs who've
+                already secured their spot.
+              </p>
+            </div>
+          </div>
+
+          <!-- RIGHT: Pre-Registration Form -->
+          <div class="waitlist-right reveal reveal--delay-2">
+            <div class="waitlist-cta-card" id="formCard">
+              <div class="waitlist-cta-card__header">
+                <h3>Secure Your Spot</h3>
+                <p>Takes 60 seconds. No commitment. No credit card.</p>
+              </div>
+
+              <div class="waitlist-cta-card__body">
+                <!-- FORM -->
+                <div class="reg-form" id="regForm">
+                  <div class="form-group">
+                    <label for="fname">Full Name</label>
+                    <input
+                      type="text"
+                      id="fname"
+                      placeholder="e.g. Priya Sharma"
+                      autocomplete="name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="femail">Email Address</label>
+                    <input
+                      type="email"
+                      id="femail"
+                      placeholder="you@example.com"
+                      autocomplete="email"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="fphone"
+                      >WhatsApp Number
+                      <span class="optional">(optional)</span></label
+                    >
+                    <input
+                      type="tel"
+                      id="fphone"
+                      placeholder="+91 98765 43210"
+                      autocomplete="tel"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="fclients"
+                      >How many clients do you manage?</label
+                    >
+                    <select id="fclients">
+                      <option value="" disabled selected>Select range</option>
+                      <option value="1-10">1 – 10 clients</option>
+                      <option value="11-30">11 – 30 clients</option>
+                      <option value="31-50">31 – 50 clients</option>
+                      <option value="50+">50+ clients</option>
+                    </select>
+                  </div>
+
+                  <button
+                    class="btn btn--primary btn--xl reg-submit-btn"
+                    id="submitBtn"
+                    onclick="handleSignup()"
+                  >
+                    <span id="btnText">Pre-Register for Early Access</span>
+                    <svg
+                      id="btnArrow"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M3 8h10M9 4l4 4-4 4"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <span
+                      id="btnSpinner"
+                      class="spinner"
+                      style="display: none"
+                    ></span>
+                  </button>
+
+                  <p
+                    id="formError"
+                    class="form-error"
+                    style="display: none"
+                  ></p>
+                  <p class="form-note">
+                    🔒 No spam. We'll only email you about your waitlist status
+                    and launch.
+                  </p>
+                </div>
+
+                <!-- SUCCESS STATE -->
+                <div class="reg-success" id="regSuccess" style="display: none">
+                  <div class="success-icon">✅</div>
+                  <h3>You're on the list!</h3>
+                  <p>
+                    Check your inbox — we've sent a confirmation email with
+                    details about what happens next.
+                  </p>
+                  <p class="success-sub">
+                    We'll notify you personally when GSTflow is ready for you.
+                    You'll be among the first.
+                  </p>
+                  <a
+                    href="index.html"
+                    class="btn btn--ghost"
+                    style="margin-top: 16px"
+                    >← Back to Home</a
+                  >
+                </div>
+              </div>
+
+              <div class="waitlist-cta-card__footer">
+                <div class="cta-stat">
+                  <span class="waitlist-count-display">128</span>on the list
+                </div>
+                <div class="cta-stat"><span>20%</span>founding discount</div>
+                <div class="cta-stat"><span>Free</span>early access</div>
+              </div>
+            </div>
+
+            <div class="waitlist-team-note">
+              <div class="team-note-avatar">GF</div>
+              <div>
+                <p class="team-note-text">
+                  "We didn't build GSTflow to disrupt software. We built it
+                  because India's CAs deserve their weekends back — and we're
+                  not stopping until every solo CA has them."
+                </p>
+                <p class="team-note-name">
+                  — We at GSTflow ·
+                  <a href="mailto:gstfloww@gmail.com">gstfloww@gmail.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-label reveal">FAQ</div>
+        <h2 class="reveal reveal--delay-1">Common questions.</h2>
+        <div class="faq-list">
+          <div class="faq-item reveal reveal--delay-1">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Is GSTflow live right now?<span class="faq-arrow">↓</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                GSTflow is in early development. We're onboarding a small group
+                of beta CAs to validate the product and workflow. Waitlist
+                members get access before the public launch.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item reveal reveal--delay-2">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              What is the 20% founding discount?<span class="faq-arrow">↓</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                The first batch of waitlist members get 20% off their
+                subscription for life — as long as they remain customers. This
+                discount is only available to early signups and disappears once
+                the founding spots fill up.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item reveal reveal--delay-3">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Do I need to pay to pre-register?<span class="faq-arrow">↓</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Absolutely not. Pre-registering is completely free. No credit
+                card, no commitment. We'll discuss pricing only when we move you
+                to paid access.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item reveal reveal--delay-4">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Does my client need to download an app?<span class="faq-arrow"
+                >↓</span
+              >
+            </button>
+            <div class="faq-answer">
+              <p>
+                No. Clients get a unique link they open in their browser on any
+                phone. No app download, no login, no account creation. They
+                upload the invoice and they're done.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Is my data secure?<span class="faq-arrow">↓</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes. All invoice data is encrypted in transit and at rest. You
+                can delete a client's data at any time from your dashboard.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__brand">
+            <div class="footer__logo">⚡ GSTflow</div>
+            <p>
+              The AI-powered GST compliance layer<br />for every CA in India.
+            </p>
+            <p class="footer__contact">
+              <a href="mailto:gstfloww@gmail.com">gstfloww@gmail.com</a> ·
+              <a href="https://instagram.com/gstfloww" target="_blank"
+                >@gstfloww</a
+              >
+            </p>
+          </div>
+          <div class="footer__links">
+            <div class="footer__col">
+              <h4>Product</h4>
+              <a href="solution.html">How It Works</a>
+              <a href="product.html">Features</a>
+              <a href="why-now.html">Why Now</a>
+            </div>
+            <div class="footer__col">
+              <h4>Company</h4>
+              <a href="about.html">About</a>
+              <a href="problem.html">The Problem</a>
+              <a href="waitlist.html">Join Waitlist</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>© 2026 GSTflow. Built in Hyderabad, India.</span>
+          <span
+            ><a href="mailto:gstfloww@gmail.com" style="color: inherit"
+              >gstfloww@gmail.com</a
+            ></span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/global.js"></script>
+    <script>
+      /* ============================================================
+       CONFIG — Fill these in before going live
+       ============================================================ */
+      const EMAILJS_PUBLIC_KEY = "EqK4yxrY_PMph2kxr";
+      const EMAILJS_SERVICE_ID = "service_7atkroc";
+      const EMAILJS_TEMPLATE_ID = "template_23jajrd";
+
+      // Google Apps Script Web App URL (deploy from your sheet — see SETUP.md)
+      const GOOGLE_SHEET_URL =
+        "https://script.google.com/macros/s/AKfycbyX0TK15Bt7feHV431iacc55o7UXGyy2jfEwd4rkPk1eilWUwPqXos9deGiQigDGVdSaw/exec";
+
+      emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+
+      /* ── Dynamic count: base 128, grows with each signup ── */
+      const BASE_COUNT = 128;
+
+      function getCount() {
+        const stored = parseInt(localStorage.getItem("gstflow_count") || "0");
+        return BASE_COUNT + stored;
+      }
+
+      function formatCount(n) {
+        return n.toString();
+      }
+
+      function updateCountDisplays() {
+        const label = formatCount(getCount());
+        document.querySelectorAll(".waitlist-count-display").forEach((el) => {
+          el.textContent = label;
+        });
+      }
+
+      updateCountDisplays();
+
+      /* ── Form submission ── */
+      async function handleSignup() {
+        const name = document.getElementById("fname")?.value.trim();
+        const email = document.getElementById("femail")?.value.trim();
+        const phone = document.getElementById("fphone")?.value.trim();
+        const clients = document.getElementById("fclients")?.value;
+        const btn = document.getElementById("submitBtn");
+        const btnText = document.getElementById("btnText");
+        const btnArrow = document.getElementById("btnArrow");
+        const spinner = document.getElementById("btnSpinner");
+        const errorEl = document.getElementById("formError");
+
+        errorEl.style.display = "none";
+        if (!name) {
+          showError("Please enter your name.");
+          return;
+        }
+        if (!email || !email.includes("@")) {
+          showError("Please enter a valid email.");
+          return;
+        }
+        if (!clients) {
+          showError("Please select your client range.");
+          return;
+        }
+
+        btn.disabled = true;
+        btnText.textContent = "Registering...";
+        btnArrow.style.display = "none";
+        spinner.style.display = "inline-block";
+
+        const timestamp = new Date().toISOString();
+        let sheetOk = false;
+        let emailOk = false;
+
+        // 1. Send to Google Sheet
+        try {
+          const res = await fetch(GOOGLE_SHEET_URL, {
+            method: "POST",
+            mode: "no-cors",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              name,
+              email,
+              phone: phone || "",
+              clients,
+              timestamp,
+            }),
+          });
+          sheetOk = true;
+        } catch (e) {
+          if (GOOGLE_SHEET_URL === "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL") {
+            sheetOk = true; // demo mode
+          }
+          console.warn("Sheet error:", e);
+        }
+
+        // 2. Send confirmation email via EmailJS
+        try {
+          await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+            to_name: name,
+            to_email: email,
+            phone: phone || "Not provided",
+            client_count: clients,
+            timestamp,
+          });
+          emailOk = true;
+        } catch (e) {
+          if (EMAILJS_PUBLIC_KEY === "YOUR_EMAILJS_PUBLIC_KEY") {
+            emailOk = true; // demo mode
+          }
+          console.warn("Email error:", e);
+        }
+
+        if (sheetOk || emailOk) {
+          onSuccess();
+        } else {
+          showError(
+            "Something went wrong. Please email us: gstfloww@gmail.com",
+          );
+          btn.disabled = false;
+          btnText.textContent = "Pre-Register for Early Access";
+          btnArrow.style.display = "inline";
+          spinner.style.display = "none";
+        }
+      }
+
+      function onSuccess() {
+        const prev = parseInt(localStorage.getItem("gstflow_count") || "0");
+        localStorage.setItem("gstflow_count", prev + 1);
+        updateCountDisplays();
+
+        document.getElementById("regForm").style.display = "none";
+        document.getElementById("regSuccess").style.display = "block";
+      }
+
+      function showError(msg) {
+        const el = document.getElementById("formError");
+        el.textContent = msg;
+        el.style.display = "block";
+      }
+
+      function toggleFaq(btn) {
+        const item = btn.closest(".faq-item");
+        const isOpen = item.classList.contains("open");
+        document
+          .querySelectorAll(".faq-item.open")
+          .forEach((el) => el.classList.remove("open"));
+        if (!isOpen) item.classList.add("open");
+      }
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" && document.activeElement.closest(".reg-form"))
+          handleSignup();
+      });
+    </script>
+  </body>
+</html>

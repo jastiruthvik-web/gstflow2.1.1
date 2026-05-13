@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How It Works — GSTflow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/solution.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo"><span class="nav__logo-bolt">⚡</span><span>GSTflow</span></a>
+      <ul class="nav__links">
+        <li><a href="problem.html">The Problem</a></li>
+        <li><a href="solution.html">Solution</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="why-now.html">Why Now</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <a href="waitlist.html" class="btn btn--nav">Join Waitlist →</a>
+      <button class="nav__burger" id="burger"><span></span><span></span><span></span></button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="problem.html">The Problem</a>
+      <a href="solution.html">Solution</a>
+      <a href="product.html">Product</a>
+      <a href="why-now.html">Why Now</a>
+      <a href="about.html">About</a>
+      <a href="waitlist.html" class="btn btn--primary">Join Waitlist →</a>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="section-label reveal">The Solution</div>
+      <h1 class="reveal reveal--delay-1">WhatsApp chaos to<br /><em>clean Tally data in seconds.</em></h1>
+      <p class="reveal reveal--delay-2">Four clean steps. Powered by our AI. Built for how CAs actually work.</p>
+    </div>
+  </section>
+
+  <!-- STEPS -->
+  <section class="steps-section">
+    <div class="container">
+      <div class="steps-timeline">
+
+        <div class="step-block reveal">
+          <div class="step-block__num">01</div>
+          <div class="step-block__content">
+            <div class="step-block__header">
+              <div class="step-icon">📤</div>
+              <div>
+                <h2>Client Uploads</h2>
+                <p class="step-tagline">No login. No friction. Just a link.</p>
+              </div>
+            </div>
+            <p>Every client gets a unique, personalized upload link from you. They open it on their phone — no sign-up, no password, no app download needed. They upload a PDF, a photo of the invoice, or an Excel sheet. That's it. The chaos stops at their end.</p>
+            <div class="step-details">
+              <div class="step-detail"><span>✓</span> Accepts PDF, image, Excel</div>
+              <div class="step-detail"><span>✓</span> Works on any phone</div>
+              <div class="step-detail"><span>✓</span> No login for clients</div>
+              <div class="step-detail"><span>✓</span> Unique link per client</div>
+            </div>
+            <div class="step-mockup step-mockup--upload">
+              <div class="upload-phone">
+                <div class="upload-phone__screen">
+                  <div class="upload-phone__header"><span>⚡ GSTflow Upload</span></div>
+                  <div class="upload-phone__body">
+                    <div class="upload-zone">
+                      <div class="upload-zone__icon">📂</div>
+                      <p>Tap to upload invoice</p>
+                      <span>PDF · Photo · Excel</span>
+                    </div>
+                    <div class="upload-recent">
+                      <small>Recent uploads</small>
+                      <div class="upload-item">📄 Invoice_March_1.pdf <span>✓</span></div>
+                      <div class="upload-item">🖼 IMG_2047.jpg <span>✓</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-connector"></div>
+
+        <div class="step-block reveal reveal--delay-1">
+          <div class="step-block__num">02</div>
+          <div class="step-block__content">
+            <div class="step-block__header">
+              <div class="step-icon">🤖</div>
+              <div>
+                <h2>AI Extracts</h2>
+                <p class="step-tagline">9 fields. Any format. With confidence.</p>
+              </div>
+            </div>
+            <p>The moment an invoice lands, GSTflow's AI engine reads it — regardless of how blurry, how crumpled, or how oddly formatted. It extracts all 9 mandatory GST fields, assigning each a confidence score from 0–100%. Anything below threshold gets flagged in red for your review.</p>
+            <div class="step-details">
+              <div class="step-detail"><span>✓</span> 9 fields extracted automatically</div>
+              <div class="step-detail"><span>✓</span> Per-field confidence scores</div>
+              <div class="step-detail"><span>✓</span> GSTIN validation built-in</div>
+              <div class="step-detail"><span>✓</span> Duplicate invoice detection</div>
+            </div>
+            <div class="fields-grid">
+              <div class="field-chip field-chip--ok">GSTIN <span>99%</span></div>
+              <div class="field-chip field-chip--ok">Invoice No. <span>98%</span></div>
+              <div class="field-chip field-chip--ok">Date <span>100%</span></div>
+              <div class="field-chip field-chip--ok">Taxable Amt <span>100%</span></div>
+              <div class="field-chip field-chip--ok">CGST <span>99%</span></div>
+              <div class="field-chip field-chip--ok">SGST <span>99%</span></div>
+              <div class="field-chip field-chip--warn">Supplier <span>71%</span></div>
+              <div class="field-chip field-chip--ok">HSN Code <span>97%</span></div>
+              <div class="field-chip field-chip--ok">Total Amt <span>100%</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-connector"></div>
+
+        <div class="step-block reveal reveal--delay-2">
+          <div class="step-block__num">03</div>
+          <div class="step-block__content">
+            <div class="step-block__header">
+              <div class="step-icon">📊</div>
+              <div>
+                <h2>You Approve</h2>
+                <p class="step-tagline">Clean dashboard. Flagged fields. Nothing slips.</p>
+              </div>
+            </div>
+            <p>You see all extracted data in a clean, structured dashboard. Every field with a confidence score below 85% is highlighted in red — drawn to your attention instantly. One-click correction. One-click approve. You're in full control, but doing a fraction of the work.</p>
+            <div class="step-details">
+              <div class="step-detail"><span>✓</span> All clients in one screen</div>
+              <div class="step-detail"><span>✓</span> Red flags for low-confidence fields</div>
+              <div class="step-detail"><span>✓</span> Filing deadlines visible at a glance</div>
+              <div class="step-detail"><span>✓</span> One-click corrections</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-connector"></div>
+
+        <div class="step-block reveal reveal--delay-3">
+          <div class="step-block__num">04</div>
+          <div class="step-block__content">
+            <div class="step-block__header">
+              <div class="step-icon">✅</div>
+              <div>
+                <h2>Export to Tally</h2>
+                <p class="step-tagline">One click. Clean XML. File on time. Every time.</p>
+              </div>
+            </div>
+            <p>When you're satisfied, export. GSTflow generates a clean Tally Prime XML or Excel file — perfectly formatted, zero manual rework. Import into Tally in one click. File GST on time. Every month. With confidence.</p>
+            <div class="step-details">
+              <div class="step-detail"><span>✓</span> Tally Prime XML format</div>
+              <div class="step-detail"><span>✓</span> Excel export available</div>
+              <div class="step-detail"><span>✓</span> Imports without errors</div>
+              <div class="step-detail"><span>✓</span> Filing-ready output</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON TABLE — no prices -->
+  <section class="comparison-section">
+    <div class="container">
+      <div class="section-label reveal">Why GSTflow Wins</div>
+      <h2 class="reveal reveal--delay-1">Nobody owns the<br />pre-filing gap. We do.</h2>
+      <div class="comparison-table reveal reveal--delay-2">
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th class="col--gstflow">⚡ GSTflow</th>
+              <th>ClearTax</th>
+              <th>Tally</th>
+              <th>Optotax</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pre-filing data cleanup</td>
+              <td class="col--gstflow check">✓</td>
+              <td class="cross">✗</td>
+              <td class="cross">✗</td>
+              <td class="cross">✗</td>
+            </tr>
+            <tr>
+              <td>Client upload portal</td>
+              <td class="col--gstflow check">✓</td>
+              <td class="cross">✗</td>
+              <td class="cross">✗</td>
+              <td class="partial">Partial</td>
+            </tr>
+            <tr>
+              <td>AI confidence scores</td>
+              <td class="col--gstflow check">✓</td>
+              <td class="cross">✗</td>
+              <td class="cross">✗</td>
+              <td class="cross">✗</td>
+            </tr>
+            <tr>
+              <td>Per-field flagging</td>
+              <td class="col--gstflow check">✓</td>
+              <td class="cross">✗</td>
+              <td class="cross">✗</td>
+              <td class="cross">✗</td>
+            </tr>
+            <tr>
+              <td>Built for solo CA firms</td>
+              <td class="col--gstflow check">✓</td>
+              <td class="cross">✗</td>
+              <td class="check-weak">✓</td>
+              <td class="check-weak">✓</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="comparison-note reveal">ClearTax and Tally solve <em>filing</em>. They don't solve <em>getting data ready to file</em>. That's the gap GSTflow owns.</p>
+    </div>
+  </section>
+
+  <section class="page-cta">
+    <div class="container">
+      <div class="page-cta__inner reveal">
+        <p class="page-cta__label">Ready to experience it?</p>
+        <h2>Get early access before<br />we open to the public.</h2>
+        <div class="page-cta__buttons">
+          <a href="waitlist.html" class="btn btn--primary btn--large">Pre-Register Now →</a>
+          <a href="product.html" class="btn btn--ghost btn--large">See All Features</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">⚡ GSTflow</div>
+          <p>The AI-powered GST compliance layer<br />for every CA in India.</p>
+          <p class="footer__contact">
+            <a href="mailto:gstfloww@gmail.com">gstfloww@gmail.com</a> ·
+            <a href="https://instagram.com/gstfloww" target="_blank">@gstfloww</a>
+          </p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <h4>Product</h4>
+            <a href="solution.html">How It Works</a>
+            <a href="product.html">Features</a>
+            <a href="why-now.html">Why Now</a>
+          </div>
+          <div class="footer__col">
+            <h4>Company</h4>
+            <a href="about.html">About</a>
+            <a href="problem.html">The Problem</a>
+            <a href="waitlist.html">Join Waitlist</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 GSTflow. Built in Hyderabad, India.</span>
+        <span><a href="mailto:gstfloww@gmail.com" style="color:inherit;">gstfloww@gmail.com</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/global.js"></script>
+</body>
+</html>
